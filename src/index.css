@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* This is how you declare variables */
+  /* :root { 
+    --color-var-name: 248deg 12% 13% ;
+  } */
+
+  /* system default */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background: 244deg 14% 7%;
+      --color-from: 55 65 81;
+      --color-to: 30 41 59;
+      --color-assent-1: 220deg 6% 23%;
+      --color-assent-2: 95deg 3% 45%;
+      --color-text-main: 169deg, 100%, 97%;
+      --color-text-primary: 196 13% 90%;
+      --color-text-head: 250deg 100% 97%;
+      --color-card-secondary: 215deg 28% 17%;
+      --color-text-base: 305deg 32% 93%;
+      --color-text-base-2: 217.8deg 11% 65%;
+      --color-text-secondary: 180 0% 84%;
+      --color-card-head: 215deg 28% 17%;
+      --color-card-primary: 17 17 17;
+      --color-card-secondary: 31 31 31;
+      --color-card-border: 216.923deg 19% 27%;
+      --color-card-assent-1: 210.9deg 39% 20%;
+      --color-card-assent-2: 248deg 57% 17%;
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --color-background: 175deg 45% 95%;
+      --color-from: 3 105 161;
+      --color-to: 2 132 199;
+      --color-assent-1: 239deg 85% 56%;
+      --color-assent-2: 120deg 18% 99%;
+      --color-text-head: 250deg 3% 4%;
+      --color-text-main: 169deg, 100%, 97%;
+      --color-text-primary: 50deg 100% 3%;
+      --color-text-secondary: 247deg 12% 7%;
+      --color-text-base: 305deg 32% 93%;
+      --color-text-base-2: 220deg 9% 46%;
+      --color-card-head: 212.727deg 27% 84%;
+      --color-card-primary: 229 231 235;
+      --color-card-secondary: 209 213 219;
+      --color-card-border: 216.923deg 19% 27%;
+      --color-card-assent-1: 198deg 100% 98%;
+      --color-card-assent-2: 248deg 57% 17%;
+    }
+  }
+
+  /* toggle */
+  :root[data-theme="dark"] {
+    --color-background: 244deg 14% 7%;
+    --color-from: 55 65 81;
+    --color-to: 30 41 59;
+    --color-assent-1: 220deg 6% 23%;
+    --color-assent-2: 95deg 3% 45%;
+    --color-text-head: 250deg 100% 97%;
+    --color-text-main: 169deg, 100%, 97%;
+    --color-text-primary: 196 13% 90%;
+    --color-text-base: 305deg 32% 93%;
+    --color-text-base-2: 217.8deg 11% 65%;
+    --color-text-secondary: 180 0% 84%;
+    --color-card-head: 215deg 28% 17%;
+    --color-card-primary: 17 17 17;
+      --color-card-secondary: 31 31 31;
+    --color-card-border: 216.923deg 19% 27%;
+    --color-card-assent-1: 210.9deg 39% 20%;
+    --color-card-assent-2: 248deg 57% 17%;
+  }
+  :root[data-theme="light"] {
+    --color-background: 175deg 45% 95%;
+    --color-from: 3 105 161;
+    --color-to: 2 132 199;
+    --color-assent-1: 239deg 85% 56%;
+    --color-assent-2: 120deg 18% 99%;
+    --color-text-head: 250deg 3% 4%;
+    --color-text-main: 169deg, 100%, 97%;
+    --color-text-primary: 50deg 100% 3%;
+    --color-text-secondary: 247deg 12% 7%;
+    --color-text-base: 305deg 32% 93%;
+    --color-text-base-2: 220deg 9% 46%;
+    --color-card-head: 212.727deg 27% 84%;
+    --color-card-primary: 229 231 235;
+    --color-card-secondary: 209 213 219;
+    --color-card-border: 216.923deg 19% 27%;
+    --color-card-assent-1: 198deg 100% 98%;
+    --color-card-assent-2: 248deg 57% 17%;
+  }
+  /* just a demo */
+  :root[data-theme="green"] {
+    --color-background: 137 81% 69%;
+    --color-text-primary: 263deg 81% 69%;
+  }
+}
